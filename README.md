@@ -98,7 +98,7 @@ Quality ratings are hand-set estimates in `core/model_registry.py`. User star ra
 
 | saving | History | Dashboard |
 |---|---|---|
-| ![](docs/screenshots/07-feedback.png) | ![](docs/screenshots/08-history.png) | ![](docs/screenshots/09-dashboard.png) |
+| ![](docs/screenshots/07-saving.png) | ![](docs/screenshots/08-history.png) | ![](docs/screenshots/09-dashboard.png) |
 
 ## 🧰 Tech stack
 
