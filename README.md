@@ -27,7 +27,11 @@ model. TokenWise recommends, runs it, proves the saving, and learns from your fe
 
 ## 🎬 Demo video
 
-> 📺 **[Watch the 90-second demo](docs/tokenwise-demo.mp4.mp5)**
+> 📺 **[Watch the 120-second demo](
+
+https://github.com/user-attachments/assets/c556a742-36b3-40f0-9637-0fad6d967643
+
+)**
 
 ## ✨ Features
 
