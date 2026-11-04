@@ -1,0 +1,12 @@
+streamlit>=1.36
+python-dotenv
+google-genai
+groq
+requests
+mysql-connector-python
+bcrypt
+reportlab
+transformers
+pytest
+pypdf
+Pillow
