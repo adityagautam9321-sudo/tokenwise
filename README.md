@@ -29,7 +29,8 @@ model. TokenWise recommends, runs it, proves the saving, and learns from your fe
 
 > 📺 **[Watch the 120-second demo](
 
-https://github.com/user-attachments/assets/c556a742-36b3-40f0-9637-0fad6d967643
+https://github.com/user-attachments/assets/904208ac-6c29-4cef-81ee-628413348b7d
+
 
 )**
 
