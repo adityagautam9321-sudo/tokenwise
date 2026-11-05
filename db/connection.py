@@ -1,4 +1,4 @@
-"""MySQL connection pool (settings come from .env)."""
+"""MySQL connection pool. Settings come from .env locally or Streamlit secrets in the cloud."""
 import os
 
 from dotenv import load_dotenv
@@ -9,18 +9,34 @@ load_dotenv()
 _pool = None
 
 
+def _cfg(name: str, default: str = "") -> str:
+    """Read a setting from the environment, then from Streamlit secrets."""
+    value = os.getenv(name)
+    if value:
+        return value
+    try:
+        import streamlit as st
+        return str(st.secrets.get(name, default))
+    except Exception:
+        return default
+
+
 def _get_pool():
     global _pool
     if _pool is None:
-        _pool = pooling.MySQLConnectionPool(
+        kwargs = dict(
             pool_name="tokenwise_pool",
             pool_size=5,
-            host=os.getenv("MYSQL_HOST", "localhost"),
-            port=int(os.getenv("MYSQL_PORT", "3306")),
-            user=os.getenv("MYSQL_USER", "root"),
-            password=os.getenv("MYSQL_PASSWORD", ""),
-            database=os.getenv("MYSQL_DATABASE", "tokenwise"),
+            host=_cfg("MYSQL_HOST", "localhost"),
+            port=int(_cfg("MYSQL_PORT", "3306")),
+            user=_cfg("MYSQL_USER", "root"),
+            password=_cfg("MYSQL_PASSWORD", ""),
+            database=_cfg("MYSQL_DATABASE", "tokenwise"),
         )
+        if _cfg("MYSQL_SSL", "").lower() in ("1", "true", "yes"):
+            import certifi
+            kwargs.update(ssl_ca=certifi.where(), ssl_verify_cert=True)
+        _pool = pooling.MySQLConnectionPool(**kwargs)
     return _pool
 
 
