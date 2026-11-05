@@ -21,7 +21,8 @@ with mid:
             password = st.text_input("Password", type="password")
             submitted = st.form_submit_button("Log in", use_container_width=True, type="primary")
         if submitted:
-                        try:
+                              
+            try:
                 user = authenticate(email, password)
             except Exception as e:
                 st.error(f"Could not reach the database: {e}")
