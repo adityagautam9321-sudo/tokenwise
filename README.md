@@ -11,13 +11,27 @@
 ![Groq](https://img.shields.io/badge/Groq-F55036)
 ![Tests](https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white)
 
-[Demo video](#-demo-video) · [Features](#-features) · [How it works](#-how-it-works) · [Screenshots](#-screenshots) · [Setup](#-setup) · [Roadmap](#-roadmap)
+<a href="https://tokenwise-dewpdzvuhbeytwsngjtcj9.streamlit.app">
+  <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open the live app">
+</a>
+
+[🚀 Live app](#-try-it-live) · [Demo video](#-demo-video) · [Features](#-features) · [How it works](#-how-it-works) · [Screenshots](#-screenshots) · [Setup](#-setup) · [Roadmap](#-roadmap)
 
 <img src="docs/screenshots/03-recommendations.png" alt="TokenWise recommending the top 2 models" width="85%">
 
 </div>
 
 ---
+
+## 🚀 Try it live
+
+**👉 [tokenwise-dewpdzvuhbeytwsngjtcj9.streamlit.app](https://tokenwise-dewpdzvuhbeytwsngjtcj9.streamlit.app)**
+
+1. Open the link and click **Register** to create a free account.
+2. Log in, pick a work mode and describe your task.
+3. Compare the top 2 models, run one or race both, then download the result.
+
+> The app sleeps when nobody is using it, so the first load can take about 30 seconds. Please don't enter personal or sensitive data.
 
 ## 💡 The problem
 
@@ -27,12 +41,7 @@ model. TokenWise recommends, runs it, proves the saving, and learns from your fe
 
 ## 🎬 Demo video
 
-> 📺 **[Watch the 120-second demo](
-
-https://github.com/user-attachments/assets/db248d9d-9841-4a3f-af2a-6f25f4dbc1f4
-
-
-)**
+> 📺 **[Watch the 120-second demo](docs/Overview.mp4)**
 
 ## ✨ Features
 
